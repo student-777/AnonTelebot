@@ -68,7 +68,7 @@ After=network.target
 Group=tgbot
 <br>Type=simple</br>
 WorkingDirectory=/opt/AnonTelebot
-<br>ExecStart=/opt/tgbot/venv/bin/python3 bot.py</br>
+<br>ExecStart=/opt/AnonTelebot/venv/bin/python3 bot.py</br>
 Restart=always
 
 [Install]
