@@ -64,15 +64,15 @@ docker-compose up -d
 After=network.target
 
 [Service]
-User=tgbot
+<br>User=tgbot</br>
 Group=tgbot
-Type=simple
+<br>Type=simple</br>
 WorkingDirectory=/opt/AnonTelebot
-ExecStart=/opt/tgbot/venv/bin/python3 bot.py
+<br>ExecStart=/opt/tgbot/venv/bin/python3 bot.py</br>
 Restart=always
 
 [Install]
-WantedBy=multi-user.target
+<br>WantedBy=multi-user.target</br>
 
 Скопируйте каталог AnonTelebot в /opt/
 
