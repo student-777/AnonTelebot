@@ -59,7 +59,9 @@ docker-compose up -d
 
 Скопируйте в него следующее содержание:
 
-[Unit]                                                                                                                                  Description=Anonimous Bot                                                                                                                After=network.target
+[Unit]
+Description=Anonimous Bot
+After=network.target
 
 [Service]
 User=tgbot
@@ -70,9 +72,7 @@ ExecStart=/opt/tgbot/venv/bin/python3 bot.py
 Restart=always
 
 [Install]
-
 WantedBy=multi-user.target
-
 
 Скопируйте каталог AnonTelebot в /opt/
 
