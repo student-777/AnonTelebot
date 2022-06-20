@@ -62,6 +62,7 @@ docker-compose up -d
 [Unit]
 
 Description=Anonimous Bot
+
 After=network.target
 
 [Service]
