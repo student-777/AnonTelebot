@@ -60,19 +60,31 @@ docker-compose up -d
 Скопируйте в него следующее содержание:
 
 [Unit]
+
 Description=Course Bot
+
 After=network.target
 
+
 [Service]
+
 User=tgbot
+
 Group=tgbot
+
 Type=simple
+
 WorkingDirectory=/opt/AnonTelebot
+
 ExecStart=/opt/tgbot/venv/bin/python3 bot.py
+
 Restart=always
 
+
 [Install]
+
 WantedBy=multi-user.target
+
 
 Скопируйте каталог AnonTelebot в /opt/
 
