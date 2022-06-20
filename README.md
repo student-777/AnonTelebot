@@ -60,7 +60,7 @@ docker-compose up -d
 Скопируйте в него следующее содержание:
 
 [Unit]
-Description=Course Bot
+Description=Anonimous Bot
 After=network.target
 
 [Service]
