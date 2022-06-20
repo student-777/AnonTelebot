@@ -61,7 +61,7 @@ docker-compose up -d
 
 [Unit]
 <br>Description=Anonimous Bot</br>
-<br>After=network.target</br>
+After=network.target
 
 [Service]
 User=tgbot
